@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+  background: #fff;
+}
+
+.cabecalho .container a {
+  color: #000;
+}
+
+.cabecalho .container .nav-bar ul {
+  display: flex;
+  gap: 50px;
+}
+
+.cabecalho .container .nav-bar ul li a {
+  color: #000;
+  font-size: 20px;
+}
+
+.cabecalho .container .nav-bar ul li a::after {
+  content: "";
+  background-color: #000;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+}
+
+.cabecalho .container .nav-bar ul li a:hover::after {
+  width: 100%;
+}
+
+.cabecalho .container form input {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 16px;
+  display: flex;
+  outline: none;
+  border: 2px solid #000;
+}
+
+.cabecalho .container form {
+  position: relative;
+}
+
+.cabecalho .container form i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  padding: 20px;
+  cursor: pointer;
+}
+
+main .servicos {
+  background-color: #432084;
+  height: 100vh;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 72%, 51% 90%, 0 74%);
+}
+
+main .servicos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+main .servicos .container h2 {
+  font-size: 30px;
+  color: #fff;
+}
+
+main .servicos .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80rem;
+  height: 500px;
+  gap: 50px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+main .servicos .container .cards .card {
+  width: 350px;
+  background-color: #fff;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;
+  transition: 0.1s ease;
+}
+
+main .servicos .container .cards .card:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+main .servicos .container .cards .card i {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+main .servicos .container .cards .card h3 {
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+main .servicos .container .cards .card p {
+  font-size: 16px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.contribuentes {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  gap: 100px;
+  background-color: #432084;
+  clip-path: polygon(0 0, 100% 0%, 100% 72%, 51% 90%, 0 74%);
+}
+
+.contribuentes .container {
+  display: flex;
+  border: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 800px;
+  height: 300px;
+  align-items: center;
+  transition: .3s ease-in-out;
+}
+
+.contribuentes .container:hover {
+  transform: scale(1.05);
+}
+
+.container .left {
+  width: 50%;
+}
+
+.container .left img {
+  border-radius: 20px;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.container .right {
+  margin-left: 20px;
+}
+
+.container .right .nome-da-pessoa {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.container .right .nome-da-pessoa::after {
+  content: "👨‍💼";
+}
+
+.container .right .descricao {
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.container .right .descricao a {
+  text-decoration: underline;
+  color: #432084;
+}
+
+.container .right .constribuindo {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container .right .contribuicoes {
+  display: flex;
+  margin-top: 20px;
+  gap: 50px;
+  align-items: center;
+}
+
+.container .right .contribuicoes a {
+  color: #000;
+  background-color: #7c7b7b;
+  padding: 5px 15px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .3s ease;
+  font-weight: 500;
+}
+
+.container .right .contribuicoes a:hover {
+  background-color: transparent;
+}
+
+.container .right .sobres {
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.container .right .sobres .sobre {
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: #000;
+  transition: .3s ease;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container .right .sobres .sobre:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.container .right .sobres .leitores {
+  background-color: #432084;
+  color: #000;
+  padding: 8px 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .3s ease;
+}
+
+.container .right .sobres .leitores:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
